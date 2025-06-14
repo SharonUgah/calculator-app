@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+            <!-- Number & operator grid -->
+            <button class="btn number">1</button>
+            <button class="btn number">2</button>
+            <button class="btn number">3</button>
+            <button class="btn operator">x</button>
+            <button class="btn operator">÷</button>
+
+            <button class="btn number">4</button>
+            <button class="btn number">5</button>
+            <button class="btn number">6</button>
+            <button class="btn operator">+</button>
+            <button class="btn operator">-</button>
+
+            <button class="btn number">7</button>
+            <button class="btn number">8</button>
+            <button class="btn number">9</button>
+            <button class="btn operator">%</button>
+            <button class="btn operator">^</button>
+
+            <button class="btn number">.</button>
+            <button class="btn number">0</button>
+            <button class="btn backspace">
+                <span class="backspace-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="white"
+                            d="M22 3H7c-.6 0-1.2.3-1.5.8L0 12l5.5 8.2c.3.5.9.8 1.5.8h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z" />
+                        <path fill="#3b3b55"
+                            d="M16.4 12l2.5-2.5-1.4-1.4L15 10.6l-2.5-2.5-1.4 1.4L13.6 12l-2.5 2.5 1.4 1.4L15 13.4l2.5 2.5 1.4-1.4z" />
+                    </svg>
+                </span>
+            </button>
+            <button class="btn clear">C</button>
+            <button class="btn equals">=</button>
+        </div>
+        <div class="history" id="history"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
