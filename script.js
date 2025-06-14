@@ -11,7 +11,8 @@ function evaluateExpression() {
     const formatted = expression
       .replace(/x/g, "*")
       .replace(/÷/g, "/")
-      .replace(/\^/g, "**");
+      .replace(/\^/g, "**")
+      .replace(/(\d+(\.\d+)?)%/g, "($1/100)");
 
     const result = eval(formatted);
 
